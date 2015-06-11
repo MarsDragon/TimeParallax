@@ -1,0 +1,91 @@
+body{
+  background-image: url(../img/57034.png);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+h1{
+	color: white;
+	font-size: 400%;
+	width: 20%;
+	position: relative;
+	text-align: center;
+	left: 40%;
+	z-index: 10;
+}
+
+.epoch{
+	background: url(../img/epoch.gif) no-repeat;
+	height: 108px;
+	width: 125px;
+	margin: 10% 47%;
+	z-index: 50;
+	display: inline-block;
+}
+
+.clouds{
+	background: url(../img/overworld_objects_cropped.png) no-repeat;
+	background-position: 0 -9px;
+	height: 29px;
+	width: 65px;
+	position: absolute;
+	z-index: -5;
+}
+
+.bird{
+	background: url(../img/bird.gif) no-repeat;
+	background-position: 0 0;
+	height: 8px;
+	width: 15px;
+	position: absolute;
+	left: 70%;
+	animation-duration: 20s;
+	animation-name: bird-slide;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: -10;
+}
+
+.time{
+	animation-duration: 3s;
+    animation-name: time-slide;
+}
+
+.parallax{
+	animation-duration: 3s;
+	animation-name: parallax-slide;
+}
+
+@keyframes time-slide{
+	from{
+		left: 0;
+	}
+	
+	to{
+		left: 40%;
+	}
+}
+
+@keyframes parallax-slide{
+	from{
+		left: 80%;
+	}
+	
+	to{
+		left: 40%;
+	}
+}
+
+@keyframes bird-slide{
+	from{
+		bottom: 0%;
+	}
+	
+	to{
+		bottom: 100%;
+	}
+}
